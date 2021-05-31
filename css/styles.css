@@ -97,6 +97,27 @@ img {
 .header-address-grey {
     color: var(--grey-color-text);
 }
+.email,
+.phone {
+    display: inline-flex;
+}
+.email::before,
+.phone::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.email::before {
+    background-image: url(../images/envelope.svg);
+}
+.phone::before {
+    background-image: url(../images/smartphone.svg);
+}
+
 .logo-blue,
 .header-link:hover,
 .header-link:focus,
@@ -151,6 +172,9 @@ img {
 .button-portfolio:focus {
     color: var(--white-color);
     background-color: var( --blue-color-text);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 /* Стили основного контента Студия*/
 .studio-hero {
@@ -158,6 +182,10 @@ img {
     padding-bottom: 200px;
     text-align: center;
     background-color: var(--black-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
 }
 .studio-title {
     margin: 0px auto 30px;
@@ -177,6 +205,29 @@ img {
 }
 .studio-list:not(:last-child) {
     margin-right: 30px;
+}
+.studio-list::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--grey-background-color);
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+.clock::before {
+    background-image: url(../images/clock.svg);
+}
+.diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+.astonaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 .studio-item {
     margin-bottom: 10px;
@@ -218,6 +269,12 @@ img {
 .team-photocard:not(:last-child) {
     margin-right: 30px;
 }
+.team-photocard {
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 .team-text {
     text-align: center;
     padding-top: 30px;
@@ -256,6 +313,13 @@ img {
 }
 .portfolio-project > .porfolio-card:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+}
+.porfolio-card:hover,
+.porfolio-card:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+
 }
 .portfolio-text {
     padding: 20px 24px;
