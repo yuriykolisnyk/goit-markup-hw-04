@@ -79,7 +79,6 @@ img {
 .header-address .header-address-list:not(:last-child) {
     margin-right: 50px;
 }
-
 .header-address {
     margin-left: auto;
 }
@@ -97,7 +96,7 @@ img {
 .header-address-grey {
     color: var(--grey-color-text);
 }
-.email,
+/* .email,
 .phone {
     display: inline-flex;
 }
@@ -116,8 +115,7 @@ img {
 }
 .phone::before {
     background-image: url(../images/smartphone.svg);
-}
-
+} */
 .logo-blue,
 .header-link:hover,
 .header-link:focus,
@@ -206,28 +204,8 @@ img {
 .studio-list:not(:last-child) {
     margin-right: 30px;
 }
-.studio-list::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-color: var(--grey-background-color);
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
+.icon-feature {
     margin-bottom: 30px;
-}
-.antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-.clock::before {
-    background-image: url(../images/clock.svg);
-}
-.diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-.astonaut::before {
-    background-image: url(../images/astronaut.svg);
 }
 .studio-item {
     margin-bottom: 10px;
@@ -246,16 +224,13 @@ img {
 }
 .studio-subtitle {
     margin: 0px auto 50px;
-    width: 376px;
+    width: 390px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
 }
 .solution-flex {
     display: flex;
-}
-.studio-subtitle .size {
-    width: 264px;
 }
 .studio-image:not(:last-child) {
     margin-right: 30px;
@@ -290,10 +265,56 @@ img {
     line-height: 1.19;
 }
 .team-position {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     color: var(--grey-color-text)
 }
+.icon-social-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.icon-social-list:not(:last-child) {
+    margin-right: 10px;
+}
+.icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+.icon-social:hover {
+    fill: var(--white-color);
+}
+.icon-social-link:hover {
+    background-color: var( --blue-color-text);
+}
+.client-flex { 
+    display: flex;
+}
+.client-margin:not(:last-child) {
+    margin-right: 30px;
+}
+.icon-client {
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.icon-client:hover,
+.icon-client:focus {
+    fill: var(--blue-color-text);
+    border: 1px solid var(--blue-color-text);
+}
+
 
 /* Стили основного контента Портфолио*/
 .porfolio-nav {
