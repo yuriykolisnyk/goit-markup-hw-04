@@ -94,28 +94,11 @@ img {
     color: inherit;  
 }
 .header-address-grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--grey-color-text);
 }
-/* .email,
-.phone {
-    display: inline-flex;
-}
-.email::before,
-.phone::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;  
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.email::before {
-    background-image: url(../images/envelope.svg);
-}
-.phone::before {
-    background-image: url(../images/smartphone.svg);
-} */
 .logo-blue,
 .header-link:hover,
 .header-link:focus,
@@ -124,10 +107,20 @@ img {
 .header .header-link-current {
     color: var(--blue-color-text);
 }
-
+.icon-envelope,
+.icon-smartphone {
+    fill: currentColor;
+    margin-right: 10px;
+}
+.icon-envelope:hover,
+.icon-envelope:focus,
+.icon-smartphone:hover
+.icon-smartphone:focus {
+    fill: var(--blue-color-text)
+}
 /*  Стили контента */
 
-/* Кнопки - pointer, шрифт и цвет*/
+/* Кнопки - pointer, шрифт, цветт,тени*/
 .button-orderservice {
     display: inline-block;
     padding: 10px 32px;
@@ -228,6 +221,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    text-align: center;
 }
 .solution-flex {
     display: flex;
