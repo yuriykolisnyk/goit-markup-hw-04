@@ -198,8 +198,15 @@ img {
 .studio-list:not(:last-child) {
     margin-right: 30px;
 }
-.icon-feature {
+.studio-list-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px; 
+    height: 120px;
     margin-bottom: 30px;
+    background-color: var(--grey-background-color);
+    border-radius: 4px;
 }
 .studio-item {
     margin-bottom: 10px;
@@ -303,15 +310,27 @@ img {
 .client-margin:not(:last-child) {
     margin-right: 30px;
 }
-.icon-client {
-    fill: var(--grey-color-icon);
+.icon-clien-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--grey-color-icon);
     border: 1px solid var(--grey-color-icon);
     border-radius: 4px;
 }
+.icon-client {
+    fill: currentColor;
+}
+.icon-clien-border:hover,
+.icon-clien-border:focus {
+    color: var(--blue-color-text);
+    border: 1px solid var(--blue-color-text);
+}
 .icon-client:hover,
 .icon-client:focus {
-    fill: var(--blue-color-text);
-    border: 1px solid var(--blue-color-text);
+    fill: currentColor;
 }
 
 /* Стили основного контента Портфолио*/
