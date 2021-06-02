@@ -288,11 +288,13 @@ img {
     align-items: center;
     fill: currentColor;
 }
-.icon-social-link:hover {
+.icon-social-link:hover,
+.icon-social-link:focus {
     background-color: var( --blue-color-text);
     color: var(--white-color);
 }
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
     fill: currentColor;
 }
 .client-flex { 
@@ -311,7 +313,6 @@ img {
     fill: var(--blue-color-text);
     border: 1px solid var(--blue-color-text);
 }
-
 
 /* Стили основного контента Портфолио*/
 .porfolio-nav {
