@@ -401,6 +401,7 @@ img {
 }
 .footer-flex {
     display: flex;
+    vertical-align: baseline;
 }
 
 .footer-address-white {
