@@ -401,7 +401,7 @@ img {
 }
 .footer-flex {
     display: flex;
-    vertical-align: baseline;
+    align-items: baseline;
 }
 
 .footer-address-white {
@@ -431,7 +431,6 @@ img {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
-    margin-top: 12px;
     margin-bottom: 20px;
 }
 .footer-icon-social-flex {
